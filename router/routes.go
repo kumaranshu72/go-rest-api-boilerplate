@@ -1,7 +1,7 @@
 package router
 
 import (
-	"encoding/json"
+	"github.com/kumaranshu72/go-rest-api-boilerplate/controllers"
 	"net/http"
 )
 
@@ -19,10 +19,6 @@ var routes = Routes{
 		"Health Check",
 		"GET",
 		"/health",
-		func(w http.ResponseWriter, r *http.Request) {
-			w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-			w.WriteHeader(http.StatusOK)
-			json.NewEncoder(w).Encode("{\"status\":\"LIVE\"}")
-		},
+		controllers.Health,
 	},
 }
