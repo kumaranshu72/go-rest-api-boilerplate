@@ -8,6 +8,6 @@ require (
 	github.com/codegangsta/gin v0.0.0-20171026143024-cafe2ce98974 // indirect
 	github.com/gorilla/mux v1.7.3
 	github.com/mattn/go-shellwords v1.0.6 // indirect
-	github.com/rs/cors v1.7.0 // indirect
+	github.com/rs/cors v1.7.0
 	gopkg.in/urfave/cli.v1 v1.20.0 // indirect
 )
